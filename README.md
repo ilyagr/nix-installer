@@ -99,9 +99,13 @@ $ NIX_BUILD_GROUP_NAME=nixbuilder ./nix-installer install linux-multi --nix-buil
 
 You can upgrade Nix (to the version specified [here](https://raw.githubusercontent.com/NixOS/nixpkgs/master/nixos/modules/installer/tools/nix-fallback-paths.nix)) by running:
 
-```
+```shell
 sudo -i nix upgrade-nix
 ```
+
+> **Warning**
+> `sudo nix` **will not work** without the `-i`.
+
 
 Alternatively, you can [uninstall](#uninstalling) and [reinstall](#usage) with a different version of the `nix-installer`.
 
